@@ -130,7 +130,7 @@ nav ul li a.active {
 .left .btn {
     display: flex;
     align-items: center;
-    gap: 20px;
+    /*gap: 20px;*/
 }
 
 .left .btn button {
@@ -159,7 +159,7 @@ nav ul li a.active {
 .social {
     display: flex;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .social .social-links {
@@ -242,3 +242,15 @@ nav ul li a.active {
 }
 
 /* Contact Elements - End */
+
+/* Others */
+
+footer p {
+    display: flex;
+    color: var(--white);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+/* Others */
