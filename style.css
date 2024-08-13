@@ -1,10 +1,12 @@
-* { /* All Elements */
+/* Reset attributes for all elements */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Rubik, sans-serif;
 }
 
+/* Variables to store theme colors */
 :root {
     --text-color: #00468b;
     --bg-color: #222;
@@ -13,6 +15,7 @@
     --mob-color: #2d2d2d;
 }
 
+/* Set maximum width for containers and center */
 .container {
     max-width: 1250px;
     width: 100%;
@@ -20,7 +23,6 @@
 }
 
 /* Header Elements - Start */
-
 header {
     background: var(--bg-color);
     height: 90px;
@@ -29,12 +31,14 @@ header {
     justify-content: center;
 }
 
+/* Navigation Bar */
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+/* Name Styling */
 nav .name {
     z-index: 1;
 }
@@ -46,10 +50,12 @@ nav .name a {
     color: var(--white)
 }
 
+/* Specific part of name */
 nav .name a span {
     color: var(--text-color)
 }
 
+/* Navigation Menu Items */
 nav ul {
     display: flex;
     align-items: center;
@@ -61,12 +67,14 @@ nav ul {
     margin-right: 10px;
 }
 
+/* Link Styling */
 nav ul li a {
     text-decoration: none;
     color: var(--white);
     transition: 0.4s ease;
 }
 
+/* Change color when Hovered */
 nav ul li a:hover {
     color: var(--text-color)
 }
@@ -74,11 +82,9 @@ nav ul li a:hover {
 nav ul li a.active {
     color: var(--text-color)
 }
-
 /* Header Elements - End */
 
 /* About Elements - Start */
-
 .about {
     background: var(--bg-color);
     position: absolute;
@@ -89,6 +95,7 @@ nav ul li a.active {
     padding: 250px 0 50px;
 }
 
+/* Flexbox layout to align the contents in About section */
 .about .about-info {
     display: flex;
     align-items: center;
@@ -96,7 +103,7 @@ nav ul li a.active {
 }
 
 .about-info .left {
-    flex: 1;
+    flex: 1; /* Equal Space */
 }
 
 .left span {
@@ -111,6 +118,7 @@ nav ul li a.active {
     border-radius: 25px;
 }
 
+/* Main Heading */
 .left h1 {
     font-size: 3rem;
     margin: 25px 0;
@@ -131,7 +139,6 @@ nav ul li a.active {
 .left .btn {
     display: flex;
     align-items: center;
-    /*gap: 20px;*/
 }
 
 .left .btn button {
@@ -157,12 +164,14 @@ nav ul li a.active {
     transform: translateY(-5px);
 }
 
+/* Social Media Icons */
 .social {
     display: flex;
     align-items: center;
     margin-top: 40px;
 }
 
+/* Social Media Links layout */
 .social .social-links {
     display: flex;
     align-items: center;
@@ -171,7 +180,7 @@ nav ul li a.active {
 
 .social-links a {
     font-size: 20px;
-    border-radius: 50%;
+    border-radius: 50%; /* Make Icons circular */
     color: var(--white);
     display: flex;
     align-items: center;
@@ -180,13 +189,14 @@ nav ul li a.active {
     height: 40px;
     background: linear-gradient(130deg, #383528 0%, #191919 100%);
     border: 1px solid #3b3b3b;
-    transition: 0.4s ease;
+    transition: 0.4s ease; /* Hover smoothness */
 }
 
 .social-links a:hover {
-    transform: translateY(-5px);
+    transform: translateY(-5px); /* Lift the Icons sligtly when hovered */
 }
 
+/* Profile Image Styling */
 .right .profile {
     text-align: right;
 }
@@ -199,11 +209,9 @@ nav ul li a.active {
     border: 4px solid var(--text-color);
     box-shadow: 0 0 50px var(--text-color);
 }
-
 /* About Elements - End */
 
 /* Work Elements - Start */
-
 .work {
     background: var(--bg-color);
     position: absolute;
@@ -218,11 +226,9 @@ nav ul li a.active {
     color: var(--white);
     text-align: center;
 }
-
 /* Work Elements - End */
 
 /* Contact Elements - Start */
-
 .contact {
     background: var(--bg-color);
     position: absolute;
@@ -260,11 +266,9 @@ nav ul li a.active {
     margin-bottom: 35px;
     text-align: justify;
 }
-
 /* Contact Elements - End */
 
-/* Others */
-
+/* General Elements - Start */
 footer p {
     display: flex;
     color: var(--white);
@@ -273,4 +277,4 @@ footer p {
     font-size: 0.9rem;
 }
 
-/* Others */
+/* General Elements - End */
